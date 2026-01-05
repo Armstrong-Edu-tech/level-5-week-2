@@ -1,0 +1,21 @@
+CREATE TABLE Books (
+	Book_ID INT Primary key,
+	book_title VARCHAR(255),	
+	author_ID int
+);
+
+-- INSERT INTO specific columns
+INSERT INTO Books (Book_ID, Author_ID)
+VALUES (1, 2);
+
+
+-- INSERT INTO all columns
+INSERT INTO Books
+VALUES (2, 'Clean Code', 2);
+
+
+-- INSERT multiple rows using one statement
+INSERT INTO Books
+VALUES (3, 'Kafka on the beach', 2),
+VALUES (4, 'Eragon', 3),
+VALUES (5, 'Agile & XP', 4);

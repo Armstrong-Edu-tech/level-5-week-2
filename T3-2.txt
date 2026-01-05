@@ -1,0 +1,8 @@
+Create TABLE overdue_books();
+
+-- DROP DATABASE database_name
+DROP DATABASE library;
+
+-- DROP TABLE table_name
+DROP TABLE Overdue_Books;
+

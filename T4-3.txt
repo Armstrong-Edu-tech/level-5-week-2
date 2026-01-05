@@ -1,0 +1,36 @@
+TRUNCATE TABLE borrowed_books;
+
+INSERT INTO borrowed_books
+VALUES (1),
+(2, '1-1-2025', 'returned'),
+(3, '15-12-2025', 'returned'),
+(4, '25-12-2025', 'returned');
+
+DROP TABLE books;
+CREATE TABLE books(
+	book_id INT,
+	book_title VARCHAR(255),
+	author_id int,
+	availability varchar(255)
+);
+
+INSERT INTO books (book_id, book_title, author_id, availability)
+VALUES
+(1, 'The Great Gatsby', 101, 'available'),
+(2, 'To Kill a Mockingbird', 102, 'unavailable'),
+(3, '1984', 103, 'available'),
+(4, 'Pride and Prejudice', 104, 'unavailable');
+
+-- DELETE all returned books from Borrowed_Books table.
+SELECT  FROM Borrowed_Books;
+
+-- DELETE FROM Borrowed_Books WHERE status='Returned';
+-- SELECT  FROM Borrowed_Books;
+
+
+-------------------------------------
+-- Delete all unavailable books from books table.
+SELECT  FROM books;
+
+-- DELETE FROM books WHERE availability = 'unavailable';
+-- SELECT  FROM books;

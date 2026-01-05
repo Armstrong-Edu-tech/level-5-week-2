@@ -1,0 +1,25 @@
+CRAETE TABLE Borrowed_Books(
+	Book_ID INT,
+	Return_Date varchar(255),
+	status varchar(255)
+);
+
+INSERT INTO borrowed_books(book_id) VALUES (1), (2), (3);
+
+
+-- UPDATE the Return_Date for the book with Book_ID=3
+
+SELECT * FROM Borrowed_Books;
+
+-- UPDATE Borrowed_Books SET Return_Date = '1/1/2025'
+-- WHERE Book_ID = 3;
+
+-- SELECT * FROM Borrowed_Books;
+
+--------------------------------
+-- UPDATE the status='Returned' for the book with Book_ID=3
+
+-- UPDATE Borrowed_Books SET status = 'Returned'
+-- WHERE Book_ID = 3;
+
+-- SELECT * FROM Borrowed_Books;

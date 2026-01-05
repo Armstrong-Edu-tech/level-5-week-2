@@ -1,0 +1,21 @@
+CREATE TABLE Borrowed_Books();
+
+-- ALTER TABLE (Add column) Syntax:
+-- ALTER TABLE table_name ADD column_name column_datatype;
+
+ALTER TABLE Borrowed_Books ADD Borrow_Date VARCHAR(255);
+
+
+
+-- ALTER TABLE (Rename column) Syntax:
+-- ALTER TABLE table_name RENAME COLUMN old_column_name TO new_column_name;
+
+ALTER TABLE Borrowed_Books RENAME COLUMN Borrow_Date TO Date_Of_Borrow;
+
+
+
+
+-- ALTER TABLE (Drop column) Syntax:
+-- ALTER TABLE table_name DROP COLUMN column_name;
+
+ALTER TABLE Borrowed_Books DROP COLUMN Date_Of_Borrow;

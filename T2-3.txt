@@ -1,0 +1,22 @@
+CREATE TABLE Readers (
+    Reader_ID INT PRIMARY KEY
+);
+
+CREATE TABLE Borrowed_Books(
+    Book_ID INT,
+    Reader_ID INT REFERENCES Readers(Reader_ID) ON UPDATE CASCADE
+);
+
+
+INSERT INTO Readers (Reader_ID) VALUES(1);
+
+INSERT INTO Borrowed_Books (Book_ID, Reader_ID) VALUES (2, 1);
+
+SELECT * FROM Readers;
+
+SELECT * FROM Borrowed_Books;
+
+UPDATE Readers SET Reader_ID = 5 WHERE Reader_ID = 1;
+
+SELECT * FROM Readers;
+SELECT * FROM Borrowed_Books;
