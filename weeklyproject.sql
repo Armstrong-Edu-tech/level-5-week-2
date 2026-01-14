@@ -111,11 +111,3 @@ WHERE ID = 3;
 -- After DELETE
 SELECT * FROM patients;
 SELECT * FROM appointments;
-
--- =========================
--- Final check
--- =========================
-
-SELECT * FROM doctors;
-SELECT * FROM treatments;
-SELECT * FROM prescriptions;
